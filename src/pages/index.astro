@@ -1,17 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import "../styles/global.css"
-import Navigation from "../components/Navigation.astro"
-import Footer from '../components/Footer.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Home";
 ---
 
-<Layout>
-	<Navigation />
-
-	<h1>Changes to Netlify!</h1>
-
-	<Footer />
-</Layout>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+</BaseLayout>
